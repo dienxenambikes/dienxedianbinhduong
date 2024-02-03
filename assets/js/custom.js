@@ -139,9 +139,10 @@ $(document).ready(function(){
 	  video: true,
 	  lazyLoad: true,
 	  center: true,
-	  autoplay: true, 
-   	  autoplayTimeout: 3000,
+	//   autoplay: true, 
+   	//   autoplayTimeout: 3000,
 	  responsiveClass: true,
+	 
 	  responsive: {
 		0: {
 		  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
@@ -152,34 +153,12 @@ $(document).ready(function(){
 		768: {
 		  items: 3, // Số lượng items ở độ rộng màn hình từ 768px trở lên
 		}
-	  }
+	  },
+	  nav: true, // Hiển thị nút prev và next
+	  navText: ["<", ">"], // Chữ hiển thị trên nút prev và next
 	});
   });
 
-  $(document).ready(function(){
-	$("#image-carousel").owlCarousel({
-		items: 4,
-		loop: true,
-		autoplay: true, // Tự động chuyển tiếp
-		lazyLoad: true,
-	  	center: true,
-		autoplayTimeout: 2000, // Thời gian giữa các lần chuyển tiếp (đơn vị là milliseconds, 5000ms = 5s)
-		autoplayHoverPause: true, // Tạm dừng tự động chuyển tiếp khi rê chuột vào
-		responsiveClass: true,
-		dots: false,
-		responsive: {
-			0: {
-			  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
-			},
-			600: {
-			  items: 2, // Số lượng items ở độ rộng màn hình từ 576px đến 768px
-			},
-			768: {
-			  items: 3, // Số lượng items ở độ rộng màn hình từ 768px trở lên
-			}
-		  }
-	});
-});
   
 
 $(document).ready(function(){
@@ -193,6 +172,7 @@ $(document).ready(function(){
 		autoplayHoverPause: true, // Tạm dừng tự động chuyển tiếp khi rê chuột vào
 		responsiveClass: true,
 		dots: false,
+		
 		responsive: {
 			0: {
 			  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
@@ -203,7 +183,8 @@ $(document).ready(function(){
 			768: {
 			  items: 3, // Số lượng items ở độ rộng màn hình từ 768px trở lên
 			}
-		  }
+		  },
+		  nav: true, // Hiển thị nút prev và next
+		navText: ["<", ">"], // Chữ hiển thị trên nút prev và next
 	});
 });
-  
