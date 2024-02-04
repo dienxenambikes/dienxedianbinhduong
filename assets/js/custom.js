@@ -139,10 +139,13 @@ $(document).ready(function(){
 	  video: true,
 	  lazyLoad: true,
 	  center: true,
-	//   autoplay: true, 
-   	//   autoplayTimeout: 3000,
+	  mouseDrag:true,
+	  smartSpeed:1000,
+	  transitionStyle:"fade",
+	  animateIn: 'fadeIn',
+	  animateOut: 'fadeOutLeft',
 	  responsiveClass: true,
-	 
+	  autoplayHoverPause:false,
 	  responsive: {
 		0: {
 		  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
@@ -168,11 +171,15 @@ $(document).ready(function(){
 		autoplay: true, // Tự động chuyển tiếp
 		lazyLoad: true,
 	  	center: true,
-		autoplayTimeout: 2000, // Thời gian giữa các lần chuyển tiếp (đơn vị là milliseconds, 5000ms = 5s)
-		autoplayHoverPause: true, // Tạm dừng tự động chuyển tiếp khi rê chuột vào
+		autoplayTimeout: 4000, // Thời gian giữa các lần chuyển tiếp (đơn vị là milliseconds, 5000ms = 5s)
+		autoplayHoverPause: false, // Tạm dừng tự động chuyển tiếp khi rê chuột vào
 		responsiveClass: true,
 		dots: false,
-		
+		mouseDrag:true,
+		smartSpeed:1000,
+		transitionStyle:"fade",
+		animateIn: 'fadeIn',
+		animateOut: 'fadeOutLeft',
 		responsive: {
 			0: {
 			  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
