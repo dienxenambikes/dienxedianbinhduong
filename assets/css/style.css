@@ -452,6 +452,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 }
 
 
+
 /* Media query cho thiết bị có kích thước lớn hơn 768px (màn hình máy tính và tablet) */
 @media (min-width: 768px) {
     .featured-cars-img {
@@ -459,17 +460,20 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         align-items: center;
         justify-content: center;
         padding: 0 20px;
-        height: 280px;
-        width: 120%;
+        height: 300px;
+        /* width: 100%; */
+        width: 350px;
         margin-left: -25px;
     }
     .featured-cars-img img {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
-        height: 280px;
-        width: 100%;
+        padding: 0 40px;
+        height: 300px;
+        /* width: 80%; */
+        width: 250px;
+        border-radius: 10%;
     }
     .featured-cars-video video {
         display: flex;
@@ -497,17 +501,18 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
         justify-content: space-between;
     }
 
-    .owl-prev,
+    /* .owl-prev,
     .owl-next {
-        background-color: #fff !important; /* Màu nền của nút */
-        color: #000 !important; /* Màu chữ của nút */
-        border: 1px solid #000 !important; /* Viền của nút */
-        padding: 10px 20px !important; /* Kích thước của nút */
+        background-color: rgba(255, 0, 0, 0); 
+        color: #000 !important; 
+        border: 1px solid #000 !important; 
+        padding: 10px 20px !important; 
         cursor: pointer !important;
-        font-size: 20px !important;
+        font-size: 33px !important;
         border-radius: 50% !important;
        
-    }
+    } */
+    
   }
   
   /* Media query cho thiết bị có kích thước nhỏ hơn hoặc bằng 576px (màn hình điện thoại) */
@@ -557,12 +562,12 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 
     .owl-prev,
     .owl-next {
-        background-color: #fff !important; /* Màu nền của nút */
-        color: #000 !important; /* Màu chữ của nút */
-        border: 1px solid #000 !important; /* Viền của nút */
-        padding: 10px 20px !important; /* Kích thước của nút */
+        background-color: rgba(255, 0, 0, 0) !important; 
+        color: #000 !important; 
+        /* border: 1px solid #000 !important;  */
+        padding: 10px 20px !important; 
         cursor: pointer !important;
-        font-size: 20px !important;
+        font-size: 34px !important;
         border-radius: 50% !important;
     }
   }

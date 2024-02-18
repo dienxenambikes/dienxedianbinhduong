@@ -149,12 +149,15 @@ $(document).ready(function(){
 	  responsive: {
 		0: {
 		  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
+		  nav: true
 		},
 		600: {
 		  items: 2, // Số lượng items ở độ rộng màn hình từ 576px đến 768px
+		  nav: true
 		},
 		768: {
 		  items: 3, // Số lượng items ở độ rộng màn hình từ 768px trở lên
+		  nav: false
 		}
 	  },
 	  nav: true, // Hiển thị nút prev và next
@@ -183,12 +186,15 @@ $(document).ready(function(){
 		responsive: {
 			0: {
 			  items: 1, // Số lượng items ở độ rộng màn hình dưới 576px
+			  nav: true
 			},
 			600: {
 			  items: 2, // Số lượng items ở độ rộng màn hình từ 576px đến 768px
+			  nav: true
 			},
 			768: {
 			  items: 3, // Số lượng items ở độ rộng màn hình từ 768px trở lên
+			  nav: false
 			}
 		  },
 		  nav: true, // Hiển thị nút prev và next
